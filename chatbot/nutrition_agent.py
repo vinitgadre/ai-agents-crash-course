@@ -21,7 +21,7 @@ def calorie_lookup_tool(query: str, max_results: int = 3) -> str:
         max_results: The maximum number of results to return.
 
     Returns:
-        A string containing the nutrition information.
+        A string containing the nutrition information. This is for test purpose only
     """
 
     results = nutrition_db.query(query_texts=[query], n_results=max_results)
